@@ -1,6 +1,5 @@
+name: 'Local Action'
 description: 'Run a composite action'
-
-type: composite
 
 runs:
   using: "composite"

@@ -6,3 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello, world!"
+
+  local-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: 'AndresPineros/ReusableWF'
+          path: 'ReusableWF'
+          ref: ${{ github.head_ref }}
+
+      - uses: ./ReusableWF/local-action
