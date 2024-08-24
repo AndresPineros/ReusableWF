@@ -17,3 +17,5 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - uses: ./ReusableWF/local-action
+
+      - uses: ./github/actions/local-repo-action
