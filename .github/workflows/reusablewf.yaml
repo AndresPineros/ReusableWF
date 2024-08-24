@@ -23,4 +23,4 @@ jobs:
       - shell: bash
         run: ls -laR
 
-      - uses: ./github/actions/local-repo-action
+      - uses: ./.github/actions/local-repo-action
